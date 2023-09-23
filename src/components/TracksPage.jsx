@@ -20,7 +20,7 @@ const filteredTracks = tracks.filter(track => {
   return (
     <div>
       <Search setSearch={setSearch}/>
-      <AddTrackForm seTracks={setTracks}/>
+      <AddTrackForm setTracks={setTracks}/>
       <TracksList tracks={filteredTracks}/> 
       {/* previosly tracks={tracks} */}
     </div>

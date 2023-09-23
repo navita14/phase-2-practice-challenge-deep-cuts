@@ -21,7 +21,7 @@ function TracksList({tracks}) {
           </th>
         </tr>
         {tracks.map(track => {
-          return <Tracks key={track.id} {...track}/>
+          return <Track key={track.id} {...track}/>
         })}
       </tbody>
     </table>

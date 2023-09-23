@@ -6,16 +6,16 @@ function AddTrackForm({setTracks}) {
 
 
     const newTrack ={ 
-      'title': event.target.title.value
-      'artist':event.target.artist.value
-      'BPM':event.target.BPM.value
+      'title': event.target.title.value,
+      'artist':event.target.artist.value,
+      'BPM':event.target.BPM.value,
       'image':event.target.image.value
     }
 
     fetch("http://localhost:8001/tracks", {
     'method' : 'POST',
     'headers' : {
-      'Content-Type' : 'applicatuon/json'
+      'Content-Type' : 'application/json'
     },
     'body': JSON.stringify(newTrack),
   })
